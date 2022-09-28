@@ -1,0 +1,71 @@
+@import url('./normalize.css');
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.button-panel {
+    display: flex;
+    width: 100%;
+}
+
+.button {
+    width: 33.3%;
+    height: 40px;
+
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+
+    transition-duration: 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+    color: red;
+}
+
+.button:active {
+    background-color: red;
+    color: white;
+}
+
+.column-wrapper {
+    display: flex;
+}
+
+.column {
+    flex: 1 0 50%;
+    height: 400px;
+    padding: 20px;
+}
+
+.column_disabled {
+    flex: 0 0 20px;
+}
+
+.column_disabled .img {
+    display: none;
+}
+
+.left-column {
+    background-color: blue;
+}
+
+.right-column {
+    background-color: green;
+}
+
+
+.img {
+    width: 100%;
+    max-width: 540px;
+    height: 280px;
+    object-fit: cover;
+}
