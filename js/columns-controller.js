@@ -1,6 +1,6 @@
-import { ColumnElem } from './view';
+import { ColumnElem } from './view.js';
 
-export const ColumnsController = class {
+export const ColumnsController = new class {
   constructor() {
     const leftColumn = document.querySelector('.left-column');
     const rightColumn = document.querySelector('.right-column');
