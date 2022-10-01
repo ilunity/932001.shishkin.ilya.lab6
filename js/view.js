@@ -1,4 +1,3 @@
-
 const COLUMN_MODIFY_CLASSES = {
   DISABLED: 'column_disabled',
 }

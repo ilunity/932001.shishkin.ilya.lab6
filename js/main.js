@@ -1,4 +1,4 @@
-import { ColumnsController } from './columns-controller';
+import { ColumnsController } from './columns-controller.js';
 
 const addButtonListeners = () => {
   const leftExpandButton = document.querySelector('.expand-left-button');
