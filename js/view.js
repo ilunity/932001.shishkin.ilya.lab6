@@ -3,7 +3,7 @@ const COLUMN_MODIFY_CLASSES = {
 }
 
 export class ColumnElem {
-  modifyClasses = [];
+  #modifyingClasses = [];
 
   constructor( elem ) {
     this.elem = elem;
@@ -11,16 +11,16 @@ export class ColumnElem {
 
   disable() {
     this.elem.classList.add(COLUMN_MODIFY_CLASSES.DISABLED);
-    this.modifyClasses.push(COLUMN_MODIFY_CLASSES.DISABLED)
+    this.#modifyingClasses.push(COLUMN_MODIFY_CLASSES.DISABLED)
   }
 
   cleanModifyClasses() {
-    if (this.modifyClasses.length === 0) return
+    if (this.#modifyingClasses.length === 0) return
 
-    this.modifyClasses.forEach(className => {
+    this.#modifyingClasses.forEach(className => {
       this.elem.classList.remove(className);
     });
 
-    this.modifyClasses = [];
+    this.#modifyingClasses = [];
   }
 }
